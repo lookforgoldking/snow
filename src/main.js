@@ -3,6 +3,7 @@ import App from './App'
 import router from './router'
 import Fastclick from 'fastclick'
 import './assets/css/common.css'
+import './assets/css/iconfont/iconfont.css'
 
 Vue.config.productionTip = false
 
