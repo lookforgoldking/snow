@@ -1,5 +1,5 @@
 <template>
-  	<swiper class="banner" >
+  	<swiper class="banner":options="swiperOption" >
     <!-- slides -->
 	    <swiper-slide v-for="item in swiperInfo" :key="item.id">
 	    	<img class="banner-img" :src="item.imgUrl" />
@@ -15,6 +15,8 @@ export default {
 			return {
 				swiperOption: {
 					pagination: '.swiper-pagination',
+					loop: true,
+					autoplay: 1000
 				}
 			}
 		}

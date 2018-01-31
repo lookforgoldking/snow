@@ -2,7 +2,7 @@
 	<div>
   		<index-header></index-header>
   		<index-swiper :swiperInfo="swiper"></index-swiper>
-      <icons></icons>
+      <icons :iconsInfo="icons"></icons>
 	</div>
 </template>
 
@@ -32,8 +32,10 @@ export default {
   			.catch(this.handleDataError.bind(this))
   		},
   		handleDataSucc(res){
-  			this.swiper = res.data.data.slider,
-        this.icons = res.data.data.slider
+  			this.swiper = res.data.data.slider
+        
+        this.icons = res.data.data.iconsList
+        console.log(this.icons)
   		},
   		handleDataError(){
   			alert('error')
