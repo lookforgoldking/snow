@@ -2,18 +2,21 @@
   <div class="mix-box">
     <details-header></details-header>
     <details-introduce></details-introduce>
+    <details-recommend></details-recommend>
   </div>  
 </template>
 
 <script>
 import DetailsHeader from './header'
 import DetailsIntroduce from './introduce'
+import DetailsRecommend from './recommend'
 
 export default {
   name: 'index',
   components: {
   	DetailsHeader,
-  	DetailsIntroduce
+  	DetailsIntroduce,
+  	DetailsRecommend
   }
 }
 </script>

@@ -21,12 +21,23 @@
         <span class="more-s iconfont">&#xe628;</span>
       </p>
     </div>
-    <div class="notice" @:click="handleNoticeClick">
+    <div class="notice" v-on:click="handleNoticeClick">
       <div class="notice-box">
         <span class="mark-l iconfont">&#xe629;</span>
           {{notice}}
         <span class="more-f iconfont">&#xe628;</span>
       </div>
+    </div>
+    <div class="notice-c" v-show="show"></div>
+    <div class="box-o" v-show="show">
+      <div class="prompt">
+        <span class="horn iconfont">&#xe629;</span>
+        景区公告
+      </div>
+      <div class="file">
+        <p>除法定节假日，故宫博物院实行周一闭馆。</p>
+      </div>
+      <div class="close iconfont" v-on:click="handleCloseClick">&#xe60c;</div>
     </div>
   </div>
   
@@ -62,7 +73,7 @@ export default {
     border-radius .1rem .1rem 0 0
     padding .1rem .2rem 0 .2rem
     margin-bottom .1rem
-    background #fff
+    background #fff 
     .address
       line-height .88rem
       height .88rem
@@ -122,10 +133,40 @@ export default {
     padding 0 .2rem 0 .2rem
     line-height .88rem
     color #f1441a
+    margin-bottom .2rem
     .more-f
       color #ccc
       font-size .4rem
       position absolute
       right .2rem
-      
+  .notice-c
+    position fixed
+    top 0 
+    left 0
+    width 100%
+    height 100%
+    background #fff
+    opacity 0.9
+    z-index 9
+  .box-o
+    position fixed
+    top 2rem
+    left 0
+    z-index 9
+    width 100%
+    .prompt
+      text-align center
+      font-size .4rem
+      color #f67353
+    .file
+      margin-top .9rem
+      padding 0 .35rem 0 .35rem
+      color #333
+      word-wrap break-word
+    .close
+      position fixed
+      width 100%
+      height .4rem
+      bottom .8rem
+      text-align center
 </style>
