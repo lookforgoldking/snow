@@ -37,6 +37,9 @@ export default {
 		margin .14rem .2rem
 		border-radius .05rem
 	.city
+    overfloor hidden
+    white-space nowrap 
+    text-overflow ellipsis
 		padding-right .26rem
 		.omit
 			font-size .4rem
