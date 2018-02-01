@@ -18,11 +18,12 @@
           </span>
         </div>
       </div>
+      <div class="price">
+        <span class="price-rmb">￥50</span>
+        <span class="btn">预订</span>
+      </div>
     </div>
-    <div class="price">
-      <span class="price-rmb">￥50</span>
-      <span class="btn">预订</span>
-    </div>
+    
   </div>
 </template>
 
@@ -43,6 +44,7 @@ export default {
     position relative
     background #fff
     margin-bottom .2rem
+    
     .recommend-t
       width 100%
       height .7rem
@@ -69,27 +71,46 @@ export default {
       padding .04rem 0 .08rem 0
     .type-m
       padding .2rem .2rem .24rem .2rem
-      .ticket-name
+      display flex
+      .type-k
         width 5.2rem
-        height 1.12rem
-        margin-right .1rem
-        line-height .56rem
-        font-size .3rem
-      .ticket-rule
-        width 5.28rem
-        height .32rem
-        padding .04rem 0 .08rem 0
-        .rule
-          color #1ba9ba
-          margin-right .24rem
-          .rule-o
-            display inline-block
-            color #616161
-        .prompt
-          color #ff4500
-          .prompt-o
-            color #616161
-            display inline-block
+        height 1.14rem
+        border-right .01rem solid #ddd
+        .ticket-name
+          margin-right .1rem
+          line-height .56rem
+          font-size .3rem
+        .ticket-rule
+          width 5.28rem
+          height .32rem
+          padding .04rem 0 .08rem 0
+          .rule
+            color #1ba9ba
+            margin-right .24rem
+            .rule-o
+              display inline-block
+              color #616161
+          .prompt
+            color #ff4500
+            .prompt-o
+              color #616161
+              display inline-block
     .price
-      float right
+      flex 1
+      height 1.12rem
+      text-align center
+      padding-top .48rem
+      padding-left .2rem
+      .price-rmb
+        display block
+        color #ff9800
+        font-size .32rem
+      .btn
+        display block
+        height .6rem
+        line-height .6rem
+        margin-right 0
+        color #fff
+        background #ff9800
+        border-radius .1rem
 </style>
