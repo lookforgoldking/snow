@@ -5,6 +5,8 @@
       <icons :iconsInfo="icons"></icons>
       <location></location>
       <list :list="list"></list>
+      <list-details :details="details"></list-details>
+      <bottom></bottom>
 	</div>
 </template>
 
@@ -14,6 +16,8 @@ import IndexSwiper from './swiper'
 import Icons from './icons'
 import Location from './location'
 import List from './list'
+import ListDetails from './list-details'
+import Bottom from './bottom'
 import axios from 'axios'
 
 export default {
@@ -22,7 +26,8 @@ export default {
   	return {
   		swiper: [],
       icons: [],
-      list: []
+      list: [],
+      details: []
   	}
   },
   components: {
@@ -30,7 +35,9 @@ export default {
   	IndexSwiper,
     Icons,
     Location,
-    List
+    List,
+    ListDetails,
+    Bottom
   },
   methods: {
   	getIndexData(){
@@ -42,6 +49,7 @@ export default {
   			this.swiper = res.data.data.slider
         this.icons = res.data.data.iconsList
         this.list = res.data.data.hotList
+        this.details = res.data.data.recommendList
   		},
   		handleDataError(){
   			alert('error')

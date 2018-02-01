@@ -1,16 +1,16 @@
 <template>
-	<div class="icons">
-		<swiper>
-	    <swiper-slide>
-	    	<div class="area-con">
-	    		<div class="area-item" v-for = "item in iconsInfo" :key="item.id">
-	    			<img class="area-img" :src="item.imgUrl" alt="">
-	    			<p class="area-desc">{{item.title}}</p>
-	    		</div>
-	    	</div>
-	    </swiper-slide>
-	 	<div class="swiper-pagination"  slot="pagination"></div>
-  </swiper>
+<div class="icons">
+	<swiper>
+    	<swiper-slide>
+    		<div class="area-con">
+    			<div class="area-item" v-for = "item in iconsInfo" :key="item.id">
+    				<img class="area-img" :src="item.imgUrl" alt="">
+    				<p class="area-desc">{{item.title}}</p>
+    			</div>
+    		</div>
+    	</swiper-slide>
+ 		<div class="swiper-pagination"  slot="pagination"></div>
+	</swiper>
 </div>
 </template>
 <script>
