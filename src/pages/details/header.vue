@@ -22,6 +22,7 @@ export default {
 <style lang="stylus" scoped>
     .header-im
       width 100%
+      z-index 1000
       .callb
         display block
         width .72rem

@@ -23,7 +23,29 @@
         <span class="btn">预订</span>
       </div>
     </div>
-    
+    <div class="type-m">
+      <div class="type-k">
+        <h4 class="ticket-name">{{tie}}</h4>
+        <div class="ticket-rule">
+          <span class="rule iconfont">
+            &#xe63a;
+            <p class="rule-o">可订明日</p>
+          </span>
+          <span class="option iconfont">
+            &#xe600;
+            <p class="option-o">无购物</p>
+          </span>
+          <span class="cost iconfont">
+            &#xe600;
+            <p class="cost-o">无自费</p>
+          </span>
+        </div>
+      </div>
+      <div class="price">
+        <span class="price-rmb">￥50</span>
+        <span class="btn">预订</span>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -33,7 +55,8 @@ export default {
   data () {
     return {
       text: '去哪儿推荐',
-      title: '【上午场】故宫成人票+故宫全景手绘地图'
+      title: '【上午场】故宫成人票+故宫全景手绘地图',
+      tie: '【寻踪紫禁城】北京故宫深度半日游丨资深导游+无线耳麦讲解器'
     }
   }
 }
@@ -72,14 +95,15 @@ export default {
     .type-m
       padding .2rem .2rem .24rem .2rem
       display flex
+      border-bottom .01rem solid #ddd
       .type-k
         width 5.2rem
-        height 1.14rem
         border-right .01rem solid #ddd
         .ticket-name
           margin-right .1rem
           line-height .56rem
           font-size .3rem
+          margin-bottom .2rem
         .ticket-rule
           width 5.28rem
           height .32rem
@@ -87,12 +111,27 @@ export default {
           .rule
             color #1ba9ba
             margin-right .24rem
+            font-size .24rem
             .rule-o
               display inline-block
               color #616161
           .prompt
             color #ff4500
+            font-size .24rem
             .prompt-o
+              color #616161
+              display inline-block
+          .option
+            color #1ba9ba
+            font-size .24rem
+            margin-right .24rem
+            .option-o
+              color #616161
+              display inline-block
+          .cost
+            color #1ba9ba
+            font-size .24rem
+            .cost-o
               color #616161
               display inline-block
     .price
