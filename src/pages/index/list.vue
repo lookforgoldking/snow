@@ -14,7 +14,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="more">查看更多</div>
+		<div class="more">查看所有产品</div>
 	</div>
 </template>
 
@@ -31,8 +31,6 @@
 .list
 	min-height 10.25rem
 	overfloor hidden
-	border-bottom 1px solid #e1e1e1
-	
 	.list-inf
 		display flex
 		height 1.47rem
@@ -67,6 +65,5 @@
 		font-size .26rem
 		color #32c7db
 		line-height .86rem
-		border-bottom 1px solid #e0e0e0
 		text-align center
 </style>
