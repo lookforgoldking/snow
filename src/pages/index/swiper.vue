@@ -15,12 +15,14 @@ export default {
 			return {
 				swiperOption: {
 					pagination: '.swiper-pagination',
+					autoplayDisableOnInteraction: false,//手动之后和效果不冲突
+					initialSlide:1,//让图片从第一张开始播
 					loop: true,
 					autoplay: 1000
 				}
 			}
 		}
-}
+	}
 </script>
 
 <style lang="stylus" scoped>

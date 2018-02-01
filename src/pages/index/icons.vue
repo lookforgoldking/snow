@@ -1,6 +1,6 @@
 <template>
 	<div class="icons">
-		<swiper :options="swiperOption">
+		<swiper>
 	    <swiper-slide>
 	    	<div class="area-con">
 	    		<div class="area-item" v-for = "item in iconsInfo" :key="item.id">
@@ -19,17 +19,26 @@
 		props: ["iconsInfo"],
 		data () {
 			return {
-				swiperOption: {
-					pagination: '.swiper-pagination'
+				
 			}
+		},
+		computed: {
+		pageList() {
+			const pages = [];
+			this.list.forEach((value,index) => {
+				const page = Math.floor(index / 8) 
+			})
 		}
 	}
-}
+	}
+	
+
 </script>
 <style lang="stylus" scoped>
 	.icons
 		overflow: hidden
 		height 3.8rem
+		border-bottom 1px solid #e0e0e0
 		.area-con
 			display flex
 			flex-wrap wrap
@@ -45,5 +54,6 @@
 					text-overflow ellipsis
 					white-space nowrap	
 					overflow hidden
-					text-align center			
+					text-align center	
+					font-size .26rem	
 </style>
