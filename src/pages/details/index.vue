@@ -35,21 +35,21 @@ export default {
     }
   },
   components: {
-  	DetailsHeader,
-  	DetailsIntroduce,
-  	DetailsRecommend,
-  	DetailsToday,
-  	DetailsAdult,
-  	DetailsStudent,
-  	DetailsOldman,
+    DetailsHeader,
+    DetailsIntroduce,
+    DetailsRecommend,
+    DetailsToday,
+    DetailsAdult,
+    DetailsStudent,
+    DetailsOldman,
     DetailsSwiper
   },
   methods: {
-  	getListInfo () {
-  		axios.get('/api/details.json')
+    getListInfo () {
+      axios.get('/api/details.json')
         .then(this.handlegetListSucc.bind(this))
         .catch(this.handlegetListerror.bind(this))
-  	},
+    },
     handlegetListSucc (res) {
       this.swiper = res.data.data.swiperlist
       console.log(this.swiper)

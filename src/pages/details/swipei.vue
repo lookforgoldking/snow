@@ -11,7 +11,7 @@
 <script>
 export default {
   name: 'details-swipei',
-  props: ["getlist"]
+  props: ['getlist']
 }
 </script>
 
