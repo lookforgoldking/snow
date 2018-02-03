@@ -1,6 +1,6 @@
-# my-vue
+# qunar
 
-> A Vue.js project
+> who_item
 
 ## Build Setup
 
