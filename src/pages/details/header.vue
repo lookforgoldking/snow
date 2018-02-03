@@ -1,7 +1,9 @@
 <template>
   <div class="header">
     <div class="header-im">
-      <p class="callb iconfont">&#xe631;</p>
+      <router-link to="/">
+        <p class="callb iconfont">&#xe631;</p>
+      </router-link>
       <img src="http://img1.qunarzz.com/sight/p0/1409/19/adca619faaab0898245dc4ec482b5722.jpg_600x330_f922b488.jpg" class="imgs">
       <span class="name-p">
         故宫(AAAAA景区)

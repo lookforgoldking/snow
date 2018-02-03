@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Index from '@/pages/index'
 import City from '@/pages/city'
 import Details from '@/pages/details'
+import Order from '@/pages/order'
 
 Vue.use(Router)
 
@@ -22,6 +23,11 @@ export default new Router({
       path: '/details',
       name: 'Details',
       component: Details                                                                      
+    },
+    {
+      path: '/order',
+      name: 'Order',
+      component: Order
     }
   ]
 })

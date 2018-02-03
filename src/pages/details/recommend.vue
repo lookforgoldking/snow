@@ -20,7 +20,9 @@
       </div>
       <div class="price">
         <span class="price-rmb">￥50</span>
-        <span class="btn">预订</span>
+        <router-link to="/order">
+          <span class="btn">预订</span>
+        </router-link>
       </div>
     </div>
     <div class="type-m">
@@ -43,7 +45,9 @@
       </div>
       <div class="price">
         <span class="price-rmb">￥50</span>
-        <span class="btn">预订</span>
+        <router-link to="/order">
+          <span class="btn">预订</span>
+        </router-link>
       </div>
     </div>
   </div>
