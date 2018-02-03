@@ -1,19 +1,17 @@
 <template>
   <div id="app">
-  	11111
-    <router-view/>
+    <keep-alive>
+      <router-view/>
+    </keep-alive>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'app'
 }
 </script>
 
 <style>
 
 </style>
-
-
-
